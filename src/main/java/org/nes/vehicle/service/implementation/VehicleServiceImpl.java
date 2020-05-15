@@ -83,10 +83,10 @@ public class VehicleServiceImpl implements VehicleService {
 
 	@Override
 	public boolean anyVehiclesExist(@Valid final List<Vehicle> vehicles) {
-		return anyVehiclesExistByid(EntityConverter.ids(vehicles));
+		return anyVehiclesExistById(EntityConverter.ids(vehicles));
 	}
 
-	private boolean anyVehiclesExistByid(final List<Integer> ids) {
+	private boolean anyVehiclesExistById(final List<Integer> ids) {
 		return vehicleRepository.countByIdIn(ids) > 0;
 	}
 
