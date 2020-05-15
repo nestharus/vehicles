@@ -6,14 +6,14 @@ import org.junit.platform.suite.api.SelectClasses;
 import org.junit.runner.RunWith;
 import org.nes.vehicle.controller.*;
 import org.nes.vehicle.mapper.VehicleMapperTest;
-import org.nes.vehicle.mapper.converter.EntityConverter;
+import org.nes.vehicle.mapper.converter.EntityConverterTest;
 import org.nes.vehicle.repository.VehicleRepositoryTest;
 import org.nes.vehicle.service.*;
 
 @RunWith(JUnitPlatform.class)
 @ExcludeEngines("junit-vintage")
 @SelectClasses({
-	EntityConverter.class,
+	EntityConverterTest.class,
 	VehicleMapperTest.class,
 	VehicleRepositoryTest.class,
 	VehicleAllExistTest.class,
